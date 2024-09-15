@@ -1,0 +1,8 @@
+/* ErrorMessage.module.css */
+
+.message {
+  text-align: center;
+  color: red;
+  font-size: 18px;
+  color: #333;
+}

@@ -1,0 +1,17 @@
+/* LoadMoreBtn.module.css */
+
+.button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #f50057;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #eb1563;
+}

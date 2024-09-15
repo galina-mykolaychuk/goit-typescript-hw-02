@@ -1,0 +1,46 @@
+/* index.css */
+
+body {
+  margin: 0;
+  background-color: #fbd2d2;
+}
+
+#root {
+  width: 100%;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #a30039;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.gallery {
+  padding-top: 100px;
+}
+.toast {
+  background-color: red;
+  color: #fff;
+}
+.toast-error {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

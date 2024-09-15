@@ -1,0 +1,51 @@
+/* SearchBar.module.css */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #a30039;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.input {
+  padding: 8px 12px 8px 36px;
+  font-size: 18px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: 240px;
+}
+
+.button {
+  padding: 8px 16px;
+  font-size: 16px;
+  color: white;
+  background-color: #f50057;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #eb1563;
+}
