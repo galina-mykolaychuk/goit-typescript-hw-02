@@ -1,18 +1,22 @@
-// SearchBar.jsx
+// SearchBar.tsx
 
-import { useState } from "react";
+import React, { useState } from "react";
 import toast from "react-hot-toast";
 import styles from "./SearchBar.module.css";
 import { FaSearch } from "react-icons/fa";
 
-const SearchBar = ({ onSubmit }) => {
-  const [inputValue, setInputValue] = useState("");
+interface SearchBarProps {
+  onSubmit: (inputValue: string) => void;
+}
 
-  const handleChange = (e) => {
+const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
+  const [inputValue, setInputValue] = useState<string>("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     setInputValue(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     if (inputValue.trim() === "") {
       toast.error("Please enter text for search.", {
